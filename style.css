@@ -1,0 +1,565 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--color-primary: rgb(200, 200, 200);
+	--color: rgb(220, 220, 220);
+	--bgcolor: rgb(30, 30, 30);
+	--subelements: rgb(35, 35, 220);
+}
+
+header {
+	background-color: var(--bgcolor);
+	color: var(--color-primary);
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	vertical-align: middle;
+	z-index: 1000;
+	font-family: "Trebuchet MS";
+	color: var(--color);
+}
+
+.header-fix {
+	position: fixed;
+	top: 0;
+}
+
+.header-content {
+	display: flex;
+	max-height: 50px;
+	margin: 0 auto;
+	width: 80%;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.header-leftside {
+	width: 35%;	
+}
+
+.header-rightside {
+	width: 30%;
+}
+
+.header-leftside ul {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.header-rightside ul {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.header-leftside img {
+	width: 60px;
+	height: 40px;
+	vertical-align: middle;
+}
+
+#logo3 {
+	width: 30px;
+	height: 30px;
+	vertical-align: middle;
+}
+
+#logo4 {
+	width: 30px;
+	height: 30px;
+	vertical-align: middle;
+}
+
+.info {
+	padding: 0 10% 0 10%;
+}
+
+.mainmenu {
+	width: 100%;
+	height: 900px;
+	font-family: "Trebuchet MS";
+	color: var(--color);
+}
+
+.mainmenu img {
+	position: absolute;
+	width: inherit;
+	height: inherit;
+	z-index: -1;
+}
+
+.info-categorys {
+	padding-top: 200px;
+	font-size: 56px;
+	z-index: 1;
+	width: 400px;
+}
+
+.info-categorys ul {
+	list-style: none;
+}
+
+.info-categorys li {
+	margin-top: 20px;
+}
+
+header li:hover {
+	color: white;
+	transition: .5s;
+}
+
+.mainmenu li:hover {
+	color: white;
+	transition: .5s	;
+}
+
+#lights1 {
+	position: absolute;
+	width: 100px;
+	height: 50px;
+}
+
+#lights2 {
+	position: absolute;
+	width: 40px;
+	height: 30px;
+}
+
+.content {
+	margin: 0 10% 0 10%;
+	color: black;
+	font-family: "Trebuchet MS";;
+}
+
+.navigation {
+	margin: 0 auto;
+	line-height: 50px;
+	width: 100%;
+	height: 50px;
+	border-bottom: 2px solid black;
+	font-size: 18px;
+}
+
+.navigation ul {
+	width: auto;
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+.navigation img {
+	margin: 20px 0 0 0;
+	width: 10px;
+	height: 10px;
+}
+
+.navigation li {
+	margin: 0 10px 0 0;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+h3 {
+	padding-top: 15px;
+	margin-top: 20px;
+	margin-bottom: 50px;
+	font-size: 40px;
+}
+
+.options {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.filter {
+	width: 20%;
+	height: 20%;
+	box-shadow: 0 0 10px -1px black;
+	border-radius: 10px;
+}
+
+.filter > p {
+	text-align: center;
+	line-height: 60px;
+	color: white;
+	height: 60px;
+	font-size: 28px;
+	background-color: black;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	margin-bottom: 8%;
+}
+
+.filter ul {
+	padding: 0 5% 0 5%;
+	list-style: none;
+	font-size: 28px;
+}
+
+.filter li {
+	margin-bottom: 8%;
+}
+
+.categorys {
+	width: 75%;
+}
+
+.brands {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.brand img {
+	width: 140px;
+	height: 140px;
+	margin-bottom: 10px;
+}
+
+.brand {
+	display: inline-block;
+	width: 180px;
+	height: 180px;
+	font-size: 20px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.items {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.item {
+	margin: 20px;
+	display: inline-block;
+	width: 300px;
+	height: 390px;
+	box-shadow: 0 0 40px -20px black;
+	font-family: 'Arial Black';
+	font-size: 15px;
+}
+
+.item-content {
+	width: 100%;
+	height: 200px;
+}
+
+.item-content img {
+	width: 300px;
+	height: 200px;
+}
+
+.item-info {
+	height: 75px;
+	padding: 5px 15px 0 15px;
+	border-bottom: 1px solid black;
+	border-top: 1px solid;
+	overflow: hidden;
+	word-wrap: normal;
+	text-overflow: ellipsis;
+}
+
+.item-price {
+	font-size: 20px;
+	padding: 0 15px 0 15px;
+	height: 50px;
+	border-bottom: 1px solid black;
+	line-height: 50px;
+	vertical-align: middle;
+}
+
+.item-options {
+	padding: 5px 0 5px 0;
+	height: 75px;
+	display: flex;
+	justify-content: center;
+}
+
+.buy-button {
+	border: 2px solid black;
+	border-radius: 5px;
+	height: 40px;
+	width: 150px;
+	text-align: center;
+	background-color: black;
+	color: white;
+	line-height: 40px;
+	vertical-align: middle;
+}
+
+.buy-button:hover {
+	background-color: white;
+	color: black;
+	transition: .5s;
+}
+
+.categorys-choice {
+	display: none;
+	padding: 0 0 0 10px;
+	color: white;
+	font-size: 18px;
+	background-color: rgba(20, 20, 20, .7);
+	width: 1125px;
+	position: absolute;
+	top: 10%;
+	left: 25%;
+	text-align: center;
+	padding: 25px 0 0 20px;
+	box-shadow: 0 0 2px 0 var(--color);
+	border-radius: 15px;
+	font-family: "Trebuchet MS";
+	color: rgba(240, 240, 240, 1);
+}
+
+.categorys-choice-active {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.category-choice {
+	display: inline-block;
+	height: 250px;
+	width: 200x;
+	position: static;
+	margin-right: 25px;
+}
+
+.category-choice img {
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+	z-index: 1;
+	position: static;
+}
+
+.category-choice p {
+	position: static;
+}
+
+footer {
+	padding: 50px 10% 0 10%;
+	background-color: var(--bgcolor);
+	height: 200px;
+	font-family: "Trebuchet MS";
+}
+
+footer img {
+	width: 300px;
+	height: 165px;
+}
+
+.footer-content {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.footer-info {
+	color: var(--color);
+	font-size: 19px;
+	line-height: 30px;
+}
+
+.footer-info ul {
+	list-style: none;
+}
+
+.footer-info p {
+	margin-bottom: 30px;
+	color: white;
+	font-size: 26px;
+}
+
+.slider-body {
+	margin-top: 10px;
+}
+
+.slider-cost {
+	-webkit-appearance:none;
+	background: black;
+	height: 4px;
+	border-radius: 25px;
+	outline: none;
+	border: none;
+	width: 100%;
+}
+
+.slider-cost::-webkit-slider-thumb {
+	-webkit-appearance:none;
+	width: 15px;
+	height: 15px;
+	background: black;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.cost-range {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	font-size: 36px;
+	margin-top: 20px;
+}
+
+.cost-range-value {
+	display: inline-block;
+}
+
+.cost-range input {
+	padding-left: 5px;
+	width: 40%;
+	height: 24px;
+	font-size: 20px;
+	border: 2px solid black;
+	border-radius: 5px;
+}
+
+.filter-cat {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.filter-cat img {
+	padding-top: 12px;
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+}
+
+.filter-cat p {
+	display: inline-block;
+}
+
+.entry-menu {
+	display: none;
+	width: 400px;
+	height: 410px;
+	background-color: rgba(20, 20, 20, .7);
+	position: absolute;
+	top: 25%;
+	left: 22%;
+	margin: 0 200px 0 20%;
+	box-shadow: 0 0 2px 0 var(--color);
+	border-radius: 15px;
+	font-family: "Trebuchet MS";
+	color: rgba(240, 240, 240, 1);
+}
+
+.entry-menu > p {
+	font-size: 32px;
+	text-align: center;
+	padding-top: 15px;
+}
+
+.entry-inputs {
+	display: flex;
+	flex-direction: column;
+	padding: 60px 0 0 0 ;
+}
+
+.entry-inputs input {
+	width: 280px;
+	height: 50px;
+	background-color: rgba(20, 20, 20, 0);
+	color: rgba(200, 200, 200, 1);
+	border: 3px solid rgba(240, 240, 240, 1);
+	border-radius: 10px;
+	font-size: 22px;
+	margin-bottom: 20px;
+	padding: 0 10px 0 10px;
+}
+
+.inputs {
+	margin: 0 auto;
+	margin-bottom: 20px;
+	width: 306px
+}
+
+.entry-inputs input::-webkit-input-placeholder {
+	color: rgba(240, 240, 240, 1);
+}
+
+.entry-menu button {
+	width: 100px;
+	height: 40px;
+	background-color: black;
+	color: white;
+	margin: 20px 150px 0 150px;
+	font-family: "Arial Black";
+	font-size: 16px;
+	border: 3px solid rgba(240, 240, 240, 1);
+	border-radius: 8px;
+}
+
+.entry-menu button:hover {
+	background-color: white;
+	color: black;
+}
+
+.entry-info {
+	height: 60px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	color: rgba(240, 240, 240, 1);
+	font-size: 18px;
+	padding: 25px 20px 0 20px;
+}
+
+li > .login-options {
+	display: none;
+	position: absolute;
+/*	display: flex;*/
+	flex-direction: column;
+	border-bottom: 2px solid white;
+	align-items: flex-start;
+}
+
+.login-options > #cabinet {
+	border-bottom: 2px solid white;
+	width: 100%;
+
+}
+
+.logged:hover .login-options {
+	display: flex;
+}
+
+#registrationForm {
+	display: none;
+}
+
+#logTitle {
+	display: none;
+}
+
+#passNetu {
+	margin-right: 20px;
+}
+
+#submitR {
+	width: 200px;
+	margin-left: 100px;
+	display: none;
+}
+
