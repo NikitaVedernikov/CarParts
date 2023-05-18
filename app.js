@@ -113,9 +113,11 @@ function getDb(data, res) {
         }
     })
         .then(result => {
-            console.log(result)
-            console.log(result.user)
-            if (result != null) {
+            let password = {
+                iv: result[0].dataValues.password.slice(0, 32),
+                content: result[0].dataValues.password.slice(32)
+            }
+            if (decrypt(password) == data['password']) {
                 res.end('ok');
             }
             else {
